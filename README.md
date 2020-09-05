@@ -42,9 +42,9 @@ log\：   gen_pb_graph save workspace
 workspace\：    put your model inside here
 
 ```shell
-tflite_convert --output_file=09570.tflite --keras_model_file=multi_decteion_09570.h5
+tflite_convert --output_file=workspace/mask_decteion_09613.tflite --keras_model_file=workspace/mask_decteion_09613.h5
 ```
 
 ```shell
-./ncc/ncc compile workspace\09570.tflite workspace\09570.kmodel -i tflite --dataset images -t k210
+./ncc/ncc compile workspace/mask_decteion_09613.tflite workspace/mask_decteion_09613.kmodel -i tflite --dataset "E:\my_github\Vision-Edge\FRTAM\data\mask_nomask_fake" -t k210
 ```
