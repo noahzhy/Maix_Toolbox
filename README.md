@@ -46,5 +46,5 @@ tflite_convert --output_file=workspace/mask_decteion_09613.tflite --keras_model_
 ```
 
 ```shell
-./ncc/ncc compile workspace/mask_decteion_09613.tflite workspace/mask_decteion_09613.kmodel -i tflite --dataset "E:\my_github\Vision-Edge\FRTAM\data\mask_nomask_fake" -t k210
+./ncc/ncc compile "E:\my_github\Vision-Edge\model\landmarks_best.tflite" "E:\my_github\Vision-Edge\model\landmarks_best.kmodel" -i tflite --dataset "F:\face_landmarks_cleaned\img_dir" -t k210
 ```
