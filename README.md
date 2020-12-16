@@ -46,5 +46,5 @@ tflite_convert --output_file=workspace/mask_decteion_09613.tflite --keras_model_
 ```
 
 ```shell
-./ncc/ncc compile "E:\my_github\Vision-Edge\model\100\mobilefacenet_tf.tflite" "E:\my_github\Vision-Edge\model\mobilefacenet_100.kmodel" -i tflite --dataset "E:\my_github\Vision-Edge\Maix_Toolbox\images" -t k210
+./ncc/ncc compile "E:\my_github\Vision-Edge\model\100\mfn_9924.tflite" "E:\my_github\Vision-Edge\model\100\mfn_9924.kmodel" -i tflite --dataset "E:\my_github\Vision-Edge\nncase\images" -t k210
 ```
