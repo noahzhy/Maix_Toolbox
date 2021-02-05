@@ -46,5 +46,9 @@ tflite_convert --output_file=workspace/mask_decteion_09613.tflite --keras_model_
 ```
 
 ```shell
-./ncc/ncc compile "E:\my_github\Vision-Edge\model\100\mfn_9924.tflite" "E:\my_github\Vision-Edge\model\100\mfn_9924.kmodel" -i tflite --dataset "E:\my_github\Vision-Edge\nncase\images" -t k210
+./ncc/ncc compile "E:\Download\mask_detection.tflite" "E:\Download\mask_detection.kmodel" -i tflite --dataset "E:\dataset\landmarks\x_train" -t k210
+```
+
+```shell
+./ncc/ncc infer "E:\Download\mask_detection.kmodel" "log" --dataset "G:\githubbackup\Vision-Edge\nncase\test"
 ```
